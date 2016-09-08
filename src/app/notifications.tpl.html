@@ -1,0 +1,10 @@
+<div ng-class="['alert', 'alert-'+notification.type]" ng-repeat="notification in notifications.getCurrent()">
+    <button class="close" ng-click="removeNotification(notification)">x</button>
+    {{notification.message}}
+</div>
+
+<div class="alert alert-danger landing-alert">
+    <div class="container text-center">
+        <h5>Welcome to Quote Builder!</h5>
+    </div>
+</div>

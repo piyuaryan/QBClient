@@ -1,8 +1,9 @@
-<div class="wrapper" ng-controller="HomeCtrl">
+<div class="wrapper" ng-controller="HomeController">
     <div class="landing-header"> <!-- style="background-image: url('../assets/paper_img/cat.jpg');" -->
         <div class="container">
             <div class="motto">
-                <h1 class="title-uppercase">Home</h1>
+                <h1 ng-show="userName" class="title-uppercase">Welcome: {{userName}}</h1>
+                <h2 class="title-uppercase">Home</h2>
                 <h3>Build your {{title}}</h3>
                 <br/>
             </div>
